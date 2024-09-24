@@ -1,0 +1,33 @@
+name: ecommerce
+description: "A new Flutter project."
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0
+  http: ^1.2.2
+  image_picker: ^1.1.2
+  tflite_flutter: ^0.11.0
+  image: ^4.0.15
+  cupertino_icons: ^1.0.8
+  js: ^0.7.1
+  cross_file: ^0.3.2
+  path: ^1.8.0
+  path_provider: ^2.0.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  assets:
+    - assets/ml_models/mobilenet_v1_1.0_224.tflite
+    - assets/ml_models/labels.txt
+
+  uses-material-design: true
